@@ -20,7 +20,11 @@ public partial class TeamSetupGui : CanvasLayer
 	[Export]
 	private PanelContainer victoryScreen;
 
-	public Vector2I RosterSize = new(5, 20);
+	public Vector2I RosterSize { get; private set; } = new(5, 20);
+	public Vector2 PieceSelectorSpace { get; private set; } = new(5, 20);
+
+	public float SelectorTakesWhatpercentageOfTheScreen = 0.15f;
+	public float MaxButtonVeroudinging = 4/3f;
 	public override void _Ready()
 	{
 		GetViewport().SizeChanged += WindeowSizeChanged;
@@ -29,6 +33,7 @@ public partial class TeamSetupGui : CanvasLayer
 	public void ChangeButtonRosterSize(Vector2I newRosterSize)
 	{
 		_buttonGrid.Columns = newRosterSize.X;
+		RosterSize = newRosterSize;
 		foreach (var button in _creatureButtons)
 		{
 			button.QueueFree();
@@ -51,15 +56,22 @@ public partial class TeamSetupGui : CanvasLayer
 			b.FocusMode = Control.FocusModeEnum.None;
 			b.Pressed += () => ClickedButton(indx);
 		}
-
+		WindeowSizeChanged();
 	}
 
 
 	public void WindeowSizeChanged()
 	{
 		Vector2 windowsize = DisplayServer.WindowGetSize();
-		Vector2 buttonSize = windowsize / 11;
-		Vector2 seperators = buttonSize / 9;
+		PieceSelectorSpace =new Vector2(windowsize.X* SelectorTakesWhatpercentageOfTheScreen,windowsize.Y);
+		Vector2 seperators = new Vector2(5,5);
+		Vector2 buttonSize = (PieceSelectorSpace-seperators*(RosterSize.Y-1)) / (float)(RosterSize.Y);
+		if (MaxButtonVeroudinging*buttonSize.X < buttonSize.Y)
+		{
+			buttonSize =new Vector2(buttonSize.X, MaxButtonVeroudinging*buttonSize.X);
+		}
+		
+		GD.Print($"RosterSize={RosterSize} PieceSelectorSpace={PieceSelectorSpace} windowsize={windowsize} ");
 		_buttonGrid.AddThemeConstantOverride("h_separation", (int)seperators.X);
 		_buttonGrid.AddThemeConstantOverride("v_separation", (int)seperators.Y);
 		for (int i = 0; i < _creatureButtons.Length; i++)

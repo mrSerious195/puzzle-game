@@ -7,12 +7,17 @@
 [node name="team_setup_gui" type="CanvasLayer" node_paths=PackedStringArray("_buttonGrid", "victoryScreen")]
 script = ExtResource("1_j0pg8")
 _edditorbutton = ExtResource("2_m0r7p")
-_buttonGrid = NodePath("GridContainer")
+_buttonGrid = NodePath("ScrollContainer/GridContainer")
 victoryScreen = NodePath("VictoryPanel")
 
-[node name="GridContainer" type="GridContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
 theme_override_constants/h_separation = 5
 theme_override_constants/v_separation = 5
 

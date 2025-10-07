@@ -39,11 +39,11 @@ public partial class TeamSetupEditor : SubScene
 		Vector2 tileSize = new Vector2(32, 16);
 		Vector2 GridPixelSize = tileSize * (_gridData.GridSize.X+_gridData.GridSize.Y)/2;
 		Vector2 windowSize = DisplayServer.WindowGetSize();
-		float grows = Math.Min(windowSize.X / GridPixelSize.X, windowSize.Y / GridPixelSize.Y);
+		float grows = Math.Min((windowSize.X-_gui.PieceSelectorSpace.X) / GridPixelSize.X, windowSize.Y / GridPixelSize.Y);
 		grows *= 0.8f;
 		grows = ((int)(grows*5))/5.0f;// to prevent it from creating thin lines in the cardinal directions
 		GD.Print(new Vector2(grows, grows));
-		_teamSetupVisualiser.Position = new Vector2(-GridPixelSize.X*grows/2, -0.5f*tileSize.Y*grows);
+		_teamSetupVisualiser.Position = new Vector2(_gui.PieceSelectorSpace.X-GridPixelSize.X*grows/2, -0.25f*tileSize.Y*grows*(1+_gridData.GridSize.Y-_gridData.GridSize.X));
 		_teamSetupVisualiser.Scale = new Vector2(grows, grows);
 
 	}
@@ -163,16 +163,18 @@ public partial class TeamSetupEditor : SubScene
 	{
 		_gridData = data.TeamGridData;
 		_creatures = _pieceGen.GeneratePieces(_gridData.GridSize, data.SoftMaximum, data.HardMinimum);
-		_gui.ChangeButtonRosterSize(new Vector2I(5,1+_creatures.Length/5));
+		int columns = 3;
+		_gui.ChangeButtonRosterSize(new Vector2I(columns, 1 + _creatures.Length / columns));
 		_teamSetupVisualiser.GridSize = _gridData.GridSize;
 		_hoverTile.HoverOverChanged += HoverHighLight;
 		_teamSetupVisualiser.TileClickedOn += ClickedTile;
 		GetViewport().SizeChanged += WindeowSizeChanged;
 		WindeowSizeChanged();
-		
+
 		_gui.SelectedNewCreature += TryToSelectCreature;
 		UpdateRoster();
 		_teamSetupVisualiser.SetGridColours(_gridData.GetGridColors());
+		WindeowSizeChanged();
 	}
 
 
