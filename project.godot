@@ -22,3 +22,7 @@ project/assembly_name="Creature Collector Puzzle Game"
 [gui]
 
 theme/custom="uid://bh1ptrc74h1fx"
+
+[rendering]
+
+2d/snap/snap_2d_transforms_to_pixel=true

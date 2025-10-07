@@ -37,12 +37,12 @@ public partial class TeamSetupEditor : SubScene
 	public void WindeowSizeChanged()
 	{
 		Vector2 tileSize = new Vector2(32, 16);
-		Vector2 GridPixelSize = tileSize * _gridData.GridSize;
+		Vector2 GridPixelSize = tileSize * (_gridData.GridSize.X+_gridData.GridSize.Y)/2;
 		Vector2 windowSize = DisplayServer.WindowGetSize();
 		float grows = Math.Min(windowSize.X / GridPixelSize.X, windowSize.Y / GridPixelSize.Y);
 		grows *= 0.8f;
-		GD.Print(windowSize);
-		float scale = Math.Min(windowSize.X / 250, windowSize.Y / 250);
+		grows = ((int)(grows*5))/5.0f;// to prevent it from creating thin lines in the cardinal directions
+		GD.Print(new Vector2(grows, grows));
 		_teamSetupVisualiser.Position = new Vector2(-GridPixelSize.X*grows/2, -0.5f*tileSize.Y*grows);
 		_teamSetupVisualiser.Scale = new Vector2(grows, grows);
 
