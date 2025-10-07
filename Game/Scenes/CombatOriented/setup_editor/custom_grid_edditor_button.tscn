@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6sbwm7e4l2li"]
+
+[ext_resource type="Script" uid="uid://c7vigya8e5y70" path="res://Game/Scenes/CombatOriented/setup_editor/CustomGridEdditorButton.cs" id="1_kfhj0"]
+
+[node name="CustomGridEdditorButton" type="PanelContainer" node_paths=PackedStringArray("_celContainer")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_kfhj0")
+_celContainer = NodePath("GridContainer")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3

@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=3 uid="uid://bnffm5y5li6y7"]
+
+[ext_resource type="Script" uid="uid://c4ukg6o7vtftp" path="res://Game/Scenes/CombatOriented/setup_editor/TeamSetupEditor.cs" id="1_3fla4"]
+[ext_resource type="PackedScene" uid="uid://b0y8e35px6cti" path="res://Game/Scenes/CombatOriented/team_grid/team_grid_visualizer.tscn" id="1_ugtbf"]
+[ext_resource type="Texture2D" uid="uid://c7icxx6pmho22" path="res://Assets/blank tile.png" id="4_j2l5m"]
+[ext_resource type="PackedScene" uid="uid://cwt5r7br5jysg" path="res://Game/Scenes/CombatOriented/setup_editor/team_setup_gui.tscn" id="4_vhndi"]
+[ext_resource type="Script" uid="uid://br4u3fq2vclxu" path="res://Game/Scenes/CombatOriented/team_grid/HoverTile.cs" id="5_lga22"]
+[ext_resource type="Script" uid="uid://bmakhi45ucu4s" path="res://Game/Scenes/CombatOriented/setup_editor/PieceGenerator.cs" id="6_3fla4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4fbx"]
+texture = ExtResource("4_j2l5m")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 6)
+0:0/0/terrain_set = 0
+
+[sub_resource type="TileSet" id="TileSet_m45mf"]
+tile_shape = 1
+tile_layout = 4
+tile_size = Vector2i(32, 16)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Hover"
+terrain_set_0/terrain_0/color = Color(0.722945, 0, 0.189148, 1)
+sources/0 = SubResource("TileSetAtlasSource_v4fbx")
+
+[node name="PuzzleGame" type="Node" node_paths=PackedStringArray("_teamSetupVisualiser", "_pieceGen", "_hoverTile", "_gui")]
+script = ExtResource("1_3fla4")
+_teamSetupVisualiser = NodePath("team_grid_visualizer")
+_pieceGen = NodePath("PieceGenerator")
+_hoverTile = NodePath("team_grid_visualizer/hover_tile")
+_gui = NodePath("team_setup_gui")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="team_grid_visualizer" parent="." instance=ExtResource("1_ugtbf")]
+GridSize = Vector2i(6, 6)
+
+[node name="hover_tile" type="TileMapLayer" parent="team_grid_visualizer"]
+y_sort_enabled = true
+texture_filter = 1
+tile_set = SubResource("TileSet_m45mf")
+script = ExtResource("5_lga22")
+
+[node name="team_setup_gui" parent="." instance=ExtResource("4_vhndi")]
+
+[node name="PieceGenerator" type="Node" parent="."]
+script = ExtResource("6_3fla4")

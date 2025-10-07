@@ -1,0 +1,30 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bh1ptrc74h1fx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j2q5q"]
+bg_color = Color(0.244776, 0.244776, 0.244776, 0.462745)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i7eh4"]
+bg_color = Color(0.252028, 0.252028, 0.252028, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amlv4"]
+bg_color = Color(0.851769, 0.851769, 0.851769, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78ylj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i66g5"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aggjg"]
+bg_color = Color(1, 1, 1, 1)
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_normal_color = Color(0, 0, 0, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_j2q5q")
+Button/styles/hover = SubResource("StyleBoxFlat_i7eh4")
+Button/styles/normal = SubResource("StyleBoxFlat_amlv4")
+Button/styles/pressed = SubResource("StyleBoxFlat_78ylj")
+Panel/styles/panel = SubResource("StyleBoxFlat_i66g5")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_aggjg")

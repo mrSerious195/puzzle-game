@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://cljby5cadxlkx"]
+
+[ext_resource type="Script" uid="uid://3c6mlqv1fx8x" path="res://Game/Scenes/SceneManager.cs" id="1_aimmm"]
+[ext_resource type="PackedScene" uid="uid://bnffm5y5li6y7" path="res://Game/Scenes/CombatOriented/setup_editor/team_setup_editor.tscn" id="3_s13r0"]
+[ext_resource type="PackedScene" uid="uid://ctoewuogg8m2b" path="res://Game/Scenes/MainMenu/main_menu.tscn" id="4_m75bn"]
+
+[node name="scene_manager" type="Node"]
+script = ExtResource("1_aimmm")
+packedScenes = Array[PackedScene]([ExtResource("4_m75bn"), ExtResource("3_s13r0")])

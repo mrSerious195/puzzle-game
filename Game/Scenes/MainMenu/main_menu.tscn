@@ -1,0 +1,90 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctoewuogg8m2b"]
+
+[ext_resource type="Script" uid="uid://cr1ieff8ldf7v" path="res://Game/Scenes/MainMenu/MainMenu.cs" id="1_sfhxq"]
+
+[node name="main_menu" type="Node" node_paths=PackedStringArray("minpieceSize", "maxpieceSize")]
+script = ExtResource("1_sfhxq")
+minpieceSize = NodePath("CanvasLayer/VBoxContainer/hardMin/SpinBox")
+maxpieceSize = NodePath("CanvasLayer/VBoxContainer/SoftMax/SpinBox")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.5
+offset_top = -46.5
+offset_right = 83.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="X" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Gridsize X" type="Label" parent="CanvasLayer/VBoxContainer/X"]
+layout_mode = 2
+text = "Gridsize X :"
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/VBoxContainer/X"]
+layout_mode = 2
+size_flags_horizontal = 10
+min_value = 1.0
+max_value = 10.0
+value = 5.0
+rounded = true
+
+[node name="Y" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Gridsize X" type="Label" parent="CanvasLayer/VBoxContainer/Y"]
+layout_mode = 2
+text = "Gridsize Y :"
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/VBoxContainer/Y"]
+layout_mode = 2
+size_flags_horizontal = 10
+min_value = 1.0
+max_value = 10.0
+value = 5.0
+rounded = true
+
+[node name="hardMin" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Gridsize X" type="Label" parent="CanvasLayer/VBoxContainer/hardMin"]
+layout_mode = 2
+text = "Minimum piece size :"
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/VBoxContainer/hardMin"]
+layout_mode = 2
+size_flags_horizontal = 10
+min_value = 1.0
+value = 2.0
+rounded = true
+
+[node name="SoftMax" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Gridsize X" type="Label" parent="CanvasLayer/VBoxContainer/SoftMax"]
+layout_mode = 2
+text = "(soft) Maximum piece size :"
+
+[node name="SpinBox" type="SpinBox" parent="CanvasLayer/VBoxContainer/SoftMax"]
+layout_mode = 2
+min_value = 1.0
+value = 5.0
+rounded = true
+
+[node name="StartButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[connection signal="value_changed" from="CanvasLayer/VBoxContainer/X/SpinBox" to="." method="SetGridX"]
+[connection signal="value_changed" from="CanvasLayer/VBoxContainer/Y/SpinBox" to="." method="SetGridY"]
+[connection signal="value_changed" from="CanvasLayer/VBoxContainer/hardMin/SpinBox" to="." method="SetMinPieceSize"]
+[connection signal="value_changed" from="CanvasLayer/VBoxContainer/SoftMax/SpinBox" to="." method="SetMaxPieceSize"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/StartButton" to="." method="GoToTeamSetupEditor"]
