@@ -1,34 +1,35 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759860597
-icon.svg::CompressedTexture2D/CompressedTexture2D::8935179430441350592::1759822170::1759822170::1::::<><><>0<>0<>f76390bdca80c496cd6158e9bc28d586<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-new_theme.tres::Theme::2932361993220125873::1759858081::0::1::::<><><>0<>0<><>::
-::res://Assets/::1759822170
-blank tile.png::CompressedTexture2D/CompressedTexture2D::7035563149704912001::1759822170::1759822170::1::::<><><>0<>0<>c3c71ea708d8a7c39c07603c2bac8cfc<>res://.godot/imported/blank tile.png-a7f23465a93a91cc2c71914957873dc1.ctex::
-blank Tiles.png::CompressedTexture2D/CompressedTexture2D::3772389121792823437::1759822170::1759822170::1::::<><><>0<>0<>4c70c5acae734c072587cc0e2b3eada4<>res://.godot/imported/blank Tiles.png-4103ac935455a7e4c29e67d7204a84bf.ctex::
-::res://Game/::1759822170
-::res://Game/Scenes/::1759840173
-creature.cs::CSharpScript/CSharpScript::6591447069897701557::1759822170::0::1::::<><><>0<>0<><>::
-GameData.cs::CSharpScript::1805356838636242714::1759822170::0::1::::<>Node<><>0<>0<><>::
-SceneManager.cs::CSharpScript::1971320637138480573::1759822170::0::1::::<>Node<><>0<>0<><>::
-scene_manager.tscn::PackedScene::5563603202032619519::1759840173::0::1::::<><><>0<>0<><>::uid://3c6mlqv1fx8x::::res://Game/Scenes/SceneManager.cs<>uid://bnffm5y5li6y7::::res://Game/Scenes/CombatOriented/setup_editor/team_setup_editor.tscn<>uid://ctoewuogg8m2b::::res://Game/Scenes/MainMenu/main_menu.tscn
-SubScene.cs::CSharpScript::2666002726217633286::1759822170::0::1::::<>Node<><>1<>0<><>::
-SubSceneIndex.cs::CSharpScript/CSharpScript::8952882001100793814::1759822170::0::1::::<><><>0<>0<><>::
-::res://Game/Scenes/CombatOriented/::1759822170
-team_setup_editor.tscn::PackedScene/PackedScene::1965752139113917232::1759822170::0::1::::<><><>0<>0<><>::
-::res://Game/Scenes/CombatOriented/setup_editor/::1759859495
-CustomGridEdditorButton.cs::CSharpScript::7062734009410380553::1759822170::0::1::::<>PanelContainer<><>0<>0<><>::
-custom_grid_edditor_button.tscn::PackedScene::4599534320438757522::1759859089::0::1::::<><><>0<>0<><>::uid://c7vigya8e5y70::::res://Game/Scenes/CombatOriented/setup_editor/CustomGridEdditorButton.cs
-PieceGenerator.cs::CSharpScript::3229306944210509964::1759822170::0::1::::<>Node<><>0<>0<><>::
-TeamSetupEditor.cs::CSharpScript::6850224923995296913::1759859707::0::1::::<>Node<><>0<>0<><>::
-TeamSetupGui.cs::CSharpScript::6460492171133767862::1759860576::0::1::::<>CanvasLayer<><>0<>0<><>::
-team_setup_editor.tscn::PackedScene::3309524168402435836::1759840173::0::1::::<><><>0<>0<><>::uid://c4ukg6o7vtftp::::res://Game/Scenes/CombatOriented/setup_editor/TeamSetupEditor.cs<>uid://b0y8e35px6cti::::res://Game/Scenes/CombatOriented/team_grid/team_grid_visualizer.tscn<>uid://c7icxx6pmho22::::res://Assets/blank tile.png<>uid://cwt5r7br5jysg::::res://Game/Scenes/CombatOriented/setup_editor/team_setup_gui.tscn<>uid://br4u3fq2vclxu::::res://Game/Scenes/CombatOriented/team_grid/HoverTile.cs<>uid://bmakhi45ucu4s::::res://Game/Scenes/CombatOriented/setup_editor/PieceGenerator.cs
-team_setup_gui.tscn::PackedScene::6358072656134310866::1759859495::0::1::::<><><>0<>0<><>::uid://cybrmkwxjpi2y::::res://Game/Scenes/CombatOriented/setup_editor/TeamSetupGui.cs<>uid://b6sbwm7e4l2li::::res://Game/Scenes/CombatOriented/setup_editor/custom_grid_edditor_button.tscn<>uid://d2qmbsyj3p0a5::::res://Game/Scenes/CombatOriented/setup_editor/victory.tres
-victory.tres::Theme::9088122246020799706::1759858081::0::1::::<><><>0<>0<><>::
-::res://Game/Scenes/CombatOriented/team_grid/::1759840174
-GridData.cs::CSharpScript::571856570509407128::1759822170::0::1::::<>Node<><>0<>0<><>::
-HoverTile.cs::CSharpScript::3640762611080584462::1759822170::0::1::::<>TileMapLayer<><>0<>0<><>::
-TeamGridVisualizer.cs::CSharpScript::7426479621762731089::1759822170::0::1::::<>Node2D<><>0<>0<><>::
-team_grid_visualizer.tscn::PackedScene::4192699162389683166::1759840174::0::1::::<><><>0<>0<><>::uid://dd2pbfyaye0cj::::res://Game/Scenes/CombatOriented/team_grid/TeamGridVisualizer.cs<>uid://bt0mxyry48t6l::::res://Assets/blank Tiles.png
-::res://Game/Scenes/MainMenu/::1759840173
-MainMenu.cs::CSharpScript::6020218681811024401::1759822170::0::1::::<>Node<><>0<>0<><>::
-main_menu.tscn::PackedScene::6135613912878834927::1759840173::0::1::::<><><>0<>0<><>::uid://cr1ieff8ldf7v::::res://Game/Scenes/MainMenu/MainMenu.cs
+::res://::1760509469
+icon.svg::CompressedTexture2D/CompressedTexture2D::8935179430441350592::1758461901::1758461965::1::::<><><>0<>0<>f76390bdca80c496cd6158e9bc28d586<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+new_theme.tres::Theme::2932361993220125873::1759821876::0::1::::<><><>0<>0<><>::
+::res://Assets/::1759145559
+blank tile.png::CompressedTexture2D/CompressedTexture2D::7035563149704912001::1758461901::1758461965::1::::<><><>0<>0<>c3c71ea708d8a7c39c07603c2bac8cfc<>res://.godot/imported/blank tile.png-a7f23465a93a91cc2c71914957873dc1.ctex::
+blank Tiles.png::CompressedTexture2D/CompressedTexture2D::3772389121792823437::1758461901::1758461965::1::::<><><>0<>0<>4c70c5acae734c072587cc0e2b3eada4<>res://.godot/imported/blank Tiles.png-4103ac935455a7e4c29e67d7204a84bf.ctex::
+::res://Game/::1759145559
+::res://Game/Scenes/::1759757109
+creature.cs::CSharpScript::6591447069897701557::1758461901::0::1::::<><><>0<>0<><>::
+GameData.cs::CSharpScript::1805356838636242714::1759820478::0::1::::<>Node<><>0<>0<><>::
+SceneManager.cs::CSharpScript::1971320637138480573::1759757252::0::1::::<>Node<><>0<>0<><>::
+scene_manager.tscn::PackedScene::5563603202032619519::1759757109::0::1::::<><><>0<>0<><>::uid://3c6mlqv1fx8x::::res://Game/Scenes/SceneManager.cs<>uid://bnffm5y5li6y7::::res://Game/Scenes/CombatOriented/setup_editor/team_setup_editor.tscn<>uid://ctoewuogg8m2b::::res://Game/Scenes/MainMenu/main_menu.tscn
+SubScene.cs::CSharpScript::2666002726217633286::1758461901::0::1::::<>Node<><>1<>0<><>::
+SubSceneIndex.cs::CSharpScript::8952882001100793814::1758461901::0::1::::<><><>0<>0<><>::
+::res://Game/Scenes/CombatOriented/::1759145559
+team_setup_editor.tscn::PackedScene::1965752139113917232::1758461901::0::1::::<><><>0<>0<><>::
+::res://Game/Scenes/CombatOriented/setup_editor/::1759902107
+CustomGridEdditorButton.cs::CSharpScript::7062734009410380553::1759754074::0::1::::<>PanelContainer<><>0<>0<><>::
+custom_grid_edditor_button.tscn::PackedScene::4599534320438757522::1759819589::0::1::::<><><>0<>0<><>::uid://c7vigya8e5y70::::res://Game/Scenes/CombatOriented/setup_editor/CustomGridEdditorButton.cs
+PieceGenerator.cs::CSharpScript::3229306944210509964::1759820870::0::1::::<>Node<><>0<>0<><>::
+TeamSetupEditor.cs::CSharpScript::6850224923995296913::1759902107::0::1::::<>Node<><>0<>0<><>::
+TeamSetupGui.cs::CSharpScript::6460492171133767862::1760016281::0::1::::<>CanvasLayer<><>0<>0<><>::
+team_setup_editor.tscn::PackedScene::3309524168402435836::1759758013::0::1::::<><><>0<>0<><>::uid://c4ukg6o7vtftp::::res://Game/Scenes/CombatOriented/setup_editor/TeamSetupEditor.cs<>uid://b0y8e35px6cti::::res://Game/Scenes/CombatOriented/team_grid/team_grid_visualizer.tscn<>uid://c7icxx6pmho22::::res://Assets/blank tile.png<>uid://cwt5r7br5jysg::::res://Game/Scenes/CombatOriented/setup_editor/team_setup_gui.tscn<>uid://br4u3fq2vclxu::::res://Game/Scenes/CombatOriented/team_grid/HoverTile.cs<>uid://bmakhi45ucu4s::::res://Game/Scenes/CombatOriented/setup_editor/PieceGenerator.cs
+team_setup_gui.tscn::PackedScene::6358072656134310866::1759902107::0::1::::<><><>0<>0<><>::uid://cybrmkwxjpi2y::::res://Game/Scenes/CombatOriented/setup_editor/TeamSetupGui.cs<>uid://b6sbwm7e4l2li::::res://Game/Scenes/CombatOriented/setup_editor/custom_grid_edditor_button.tscn<>uid://d2qmbsyj3p0a5::::res://Game/Scenes/CombatOriented/setup_editor/victory.tres
+victory.tres::Theme::9088122246020799706::1759902107::0::1::::<><><>0<>0<><>::
+::res://Game/Scenes/CombatOriented/team_grid/::1759145559
+GridData.cs::CSharpScript::571856570509407128::1759757533::0::1::::<>Node<><>0<>0<><>::
+HoverTile.cs::CSharpScript::3640762611080584462::1758461901::0::1::::<>TileMapLayer<><>0<>0<><>::
+TeamGridVisualizer.cs::CSharpScript::7426479621762731089::1758461901::0::1::::<>Node2D<><>0<>0<><>::
+team_grid_visualizer.tscn::PackedScene::4192699162389683166::1758461901::0::1::::<><><>0<>0<><>::uid://dd2pbfyaye0cj::::res://Game/Scenes/CombatOriented/team_grid/TeamGridVisualizer.cs<>uid://bt0mxyry48t6l::::res://Assets/blank Tiles.png
+::res://Game/Scenes/MainMenu/::1759821876
+MainMenu.cs::CSharpScript::6020218681811024401::1759820519::0::1::::<>Node<><>0<>0<><>::
+main_menu.tscn::PackedScene::6135613912878834927::1759821876::0::1::::<><><>0<>0<><>::uid://cr1ieff8ldf7v::::res://Game/Scenes/MainMenu/MainMenu.cs
+::res://Puzzel/::1759821719

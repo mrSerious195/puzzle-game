@@ -46,6 +46,8 @@ public partial class TeamSetupGui : CanvasLayer
 		CustomGridEdditorButton b;
 		_buttonGrid.AddThemeConstantOverride("h_separation", (int)seperators.X);
 		_buttonGrid.AddThemeConstantOverride("v_separation", (int)seperators.Y);
+
+
 		for (int i = 0; i < newButtonCount; i++)
 		{
 			int indx = i;
@@ -56,6 +58,8 @@ public partial class TeamSetupGui : CanvasLayer
 			b.FocusMode = Control.FocusModeEnum.None;
 			b.Pressed += () => ClickedButton(indx);
 		}
+
+
 		WindeowSizeChanged();
 	}
 

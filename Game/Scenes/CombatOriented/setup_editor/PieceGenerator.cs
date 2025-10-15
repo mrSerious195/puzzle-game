@@ -218,6 +218,10 @@ public partial class PieceGenerator : Node
             ret.Add(new Creature("O", outersize, pieceCover));
         }
 
+        foreach(var piece in ret)
+        {
+            piece.Rotation = rnd.Next(4);
+        }
 
 
         return ret.ToArray(); ;

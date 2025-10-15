@@ -1,14 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zU9mTrNVwHY=",
+  "dgSpecHash": "WWR/sSUXXVE=",
   "success": true,
-  "projectFilePath": "/home/rowald/Documents/Godot/Games/puzzle-game/Creature Collector Puzzle Game.csproj",
+  "projectFilePath": "C:\\Users\\rowal\\Documents\\godot\\games\\puzzle-game\\Creature Collector Puzzle Game.csproj",
   "expectedPackageFiles": [
-    "/home/rowald/.nuget/packages/godot.sourcegenerators/4.5.0/godot.sourcegenerators.4.5.0.nupkg.sha512",
-    "/home/rowald/.nuget/packages/godotsharp/4.5.0/godotsharp.4.5.0.nupkg.sha512",
-    "/home/rowald/.nuget/packages/godotsharpeditor/4.5.0/godotsharpeditor.4.5.0.nupkg.sha512",
-    "/home/rowald/.nuget/packages/microsoft.netcore.app.ref/8.0.20/microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
-    "/home/rowald/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+    "C:\\Users\\rowal\\.nuget\\packages\\godot.sourcegenerators\\4.5.0\\godot.sourcegenerators.4.5.0.nupkg.sha512",
+    "C:\\Users\\rowal\\.nuget\\packages\\godotsharp\\4.5.0\\godotsharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\rowal\\.nuget\\packages\\godotsharpeditor\\4.5.0\\godotsharpeditor.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
