@@ -220,7 +220,7 @@ public partial class PieceGenerator : Node
 
         foreach(var piece in ret)
         {
-            piece.Rotation = rnd.Next(4);
+            piece.GridRotation = rnd.Next(4);
         }
 
 

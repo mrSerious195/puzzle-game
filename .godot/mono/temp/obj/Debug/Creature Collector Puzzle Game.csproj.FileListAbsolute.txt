@@ -68,21 +68,4 @@ C:/Users/rowal/Documents/godot/games/puzzle-game/.godot/mono/temp/obj/Debug/ref/
 /home/rowald/Documents/Godot/Games/puzzle-game/.godot/mono/temp/obj/Debug/Creature Collector Puzzle Game.pdb
 /home/rowald/Documents/Godot/Games/puzzle-game/.godot/mono/temp/obj/Debug/Creature Collector Puzzle Game.genruntimeconfig.cache
 /home/rowald/Documents/Godot/Games/puzzle-game/.godot/mono/temp/obj/Debug/ref/Creature Collector Puzzle Game.dll
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\bin\Debug\Creature Collector Puzzle Game.deps.json
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\bin\Debug\Creature Collector Puzzle Game.runtimeconfig.json
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\bin\Debug\Creature Collector Puzzle Game.dll
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\bin\Debug\Creature Collector Puzzle Game.pdb
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\bin\Debug\GodotSharp.dll
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.csproj.AssemblyReference.cache
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.AssemblyInfoInputs.cache
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.AssemblyInfo.cs
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.csproj.CoreCompileInputs.cache
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.sourcelink.json
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature.9561D2DB.Up2Date
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.dll
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\refint\Creature Collector Puzzle Game.dll
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.pdb
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\Creature Collector Puzzle Game.genruntimeconfig.cache
-C:\Users\rowal\Documents\godot\games\puzzle-game\.godot\mono\temp\obj\Debug\ref\Creature Collector Puzzle Game.dll
+C:/Users/rowal/Documents/godot/games/puzzle-game/.godot/mono/temp/obj/Debug/Creature Collector Puzzle Game.sourcelink.json

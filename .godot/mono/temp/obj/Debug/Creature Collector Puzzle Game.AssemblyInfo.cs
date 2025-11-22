@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Creature Collector Puzzle Game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cf49a158ccfe119ba25f76fb4f57ca5aeb215a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca9f937387b673bce67f9bd40f87b77c2dd2c49f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Creature Collector Puzzle Game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Creature Collector Puzzle Game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
